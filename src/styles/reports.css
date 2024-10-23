@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%); /* Gradient background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Card Styles */
+.bg-white {
+    background-color: #ffffff; /* White background for cards */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effect */
+}
+
+.bg-white:hover {
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow on hover */
+}
+
+/* Heading Styles */
+h1 {
+    color: #333333; /* Darker text for better contrast */
+}
+
+h2 {
+    color: #2c3e50; /* Darker blue for section headings */
+}
+
+/* Button Styles */
+button {
+    transition: background-color 0.3s, transform 0.3s; /* Animation for button hover */
+}
+
+button:hover {
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Report Generation Buttons */
+.bg-blue-600 {
+    background-color: #007bff; /* Primary color */
+}
+
+.bg-blue-600:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.text-blue-600 {
+    color: #007bff; /* Primary text color */
+}
+
+.text-blue-600:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Input Styles */
+input[type="date"] {
+    border: 1px solid #ccc; /* Light border for input */
+    transition: border-color 0.3s; /* Animation for focus */
+}
+
+input[type="date"]:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on medium and up */
+    }
+
+    .md\:col-span-2 {
+        grid-column: span 2; /* Two-column span for report preview */
+    }
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.p-6 {
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in effect on load */
+}
+
+/* Placeholder Styles */
+input::placeholder {
+    color: #b0b0b0; /* Light grey for placeholder text */
+    opacity: 1; /* Override default opacity */
+}
+
+/* Card Content */
+.p-4 {
+    padding: 20px; /* Consistent padding inside cards */
+}
+

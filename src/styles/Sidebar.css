@@ -1,0 +1,93 @@
+.sidebar {
+    width: 250px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 230vh;
+    position: relative;
+  }
+  
+  .sidebar-header h2 {
+    margin-bottom: 30px;    
+    font-size: 1.5rem;
+    color: azure;
+  }
+  
+  .sidebar-nav {
+    margin-bottom: 30px;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+    background-color: #000;
+  }
+  
+  .nav-item:hover {
+    background-color: hotpink;
+  }
+  
+  .nav-icon {
+    margin-right: 10px;
+    width: 24px;
+    text-align: center;
+  }
+  
+  .teams-section {
+    margin-bottom: 30px;
+  }
+  
+  .teams-section h3 {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .team-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .team-icon {
+    margin-right: 10px;
+    width: 24px;
+    text-align: center;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    margin-top: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    background-color: #666;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  
+  .profile-info {
+    font-size: 0.9rem;
+  }
+  
+  .profile-email {
+    color: #666;
+    font-size: 0.8rem;
+  }
+  
+  .sidebar-footer {
+    margin-top: 20px;
+  }

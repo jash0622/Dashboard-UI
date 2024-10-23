@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #4e88ff; /* Soft blue */
+    --secondary-color: #38b000; /* Bright green */
+    --background-gradient: linear-gradient(135deg, #f0f4ff, #d9e6ff);
+    --card-background: #ffffff;
+    --text-color: #1e293b;
+    --subtext-color: #64748b;
+    --border-color: #e2e8f0;
+    --success-color: #16a34a; /* Green */
+    --danger-color: #dc2626; /* Red */
+}
+
+/* Main Container */
+.analytics-dashboard {
+    padding: 24px;
+    background: var(--background-gradient);
+    min-height: 100vh;
+}
+
+/* Title */
+.dashboard-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 24px;
+}
+
+/* Metric Cards Grid */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+/* Metric Card */
+.metric-card {
+    background-color: var(--card-background);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.metric-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.metric-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.metric-title {
+    font-size: 16px;
+    color: var(--subtext-color);
+    font-weight: 500;
+}
+
+.metric-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 8px;
+}
+
+.metric-change {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.change-positive {
+    color: var(--success-color);
+}
+
+.change-negative {
+    color: var(--danger-color);
+}
+
+/* Chart Styles */
+.chart-container {
+    background-color: var(--card-background);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 24px;
+}
+
+.chart-header {
+    margin-bottom: 20px;
+}
+
+.chart-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+/* Chart Area */
+.chart-area {
+    height: 400px;
+    width: 100%;
+}
+
+/* Tooltip Styles */
+.chart-tooltip {
+    background-color: var(--card-background);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 8px 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tooltip-label {
+    font-size: 12px;
+    color: var(--subtext-color);
+    margin-bottom: 4px;
+}
+
+.tooltip-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+}

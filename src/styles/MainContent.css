@@ -1,0 +1,117 @@
+/* MainContent.css */
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feedback {
+    grid-column: 1;
+}
+
+.goals {
+    grid-column: 2;
+}
+
+.navigation {
+    grid-column: 1;
+}
+
+.widgets {
+    grid-column: 2;
+}
+
+.reporting {
+    grid-column: 1;
+}
+
+.results {
+    grid-column: 2;
+}
+
+/* Customizable Widgets Section */
+.customizable-widgets {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.customizable-widgets h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.widget-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.widget-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.widget-image img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.widget-content {
+    flex-grow: 1;
+    padding: 0 10px;
+}
+
+.widget-content p {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333;
+}
+
+.widget-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.view-btn, .edit-btn, .generate-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.view-btn:hover, .edit-btn:hover, .generate-btn:hover {
+    background-color: #45a049;
+}
+
+.generate-btn {
+    background-color: #2196F3;
+}
+
+.generate-btn:hover {
+    background-color: #0b7dda;
+}
