@@ -15,7 +15,7 @@ const GoalsSection = () => {
       icon: '⚙️'
     },
     {
-      team: 'EspMetrics',
+      team: 'EzyMetrics',
       progress: 'Data analytics-focused company based in Thane',
       icon: '📊'
     }

@@ -8,7 +8,7 @@ const ReportsGenerator = () => {
   const [dateRange, setDateRange] = useState({ from: null, to: null });
 
   const generateReport = (format) => {
-    // Implementation for report generation would go here
+   
     console.log(`Generating ${format} report for ${selectedReport}`);
   };
 
@@ -17,11 +17,11 @@ const ReportsGenerator = () => {
       <h1 className="text-2xl font-bold mb-6">Reports Generator</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* Configure Report Card */}
+      
         <div className="bg-white shadow-md rounded-lg p-4">
           <h2 className="text-lg font-semibold mb-4">Configure Report</h2>
           
-          {/* Report Type Selector */}
+         
           <div className="mb-4">
             <label className="text-sm font-medium mb-2 block">Report Type</label>
             <select 
@@ -35,11 +35,11 @@ const ReportsGenerator = () => {
             </select>
           </div>
 
-          {/* Date Range Selector */}
+          
           <div className="mb-4">
             <label className="text-sm font-medium mb-2 block">Date Range</label>
             <div className="border rounded-lg p-4">
-              {/* Date range input - simple implementation (replace with a calendar library if needed) */}
+              
               <input
                 type="date"
                 className="border rounded-lg p-2 mr-2"
@@ -54,7 +54,7 @@ const ReportsGenerator = () => {
             </div>
           </div>
 
-          {/* Buttons for report generation */}
+          
           <div className="pt-4">
             <button 
               className="w-full bg-blue-600 text-white font-semibold rounded-lg py-2 mb-2 flex items-center justify-center"
@@ -73,7 +73,7 @@ const ReportsGenerator = () => {
           </div>
         </div>
 
-        {/* Report Preview Card */}
+
         <div className="bg-white shadow-md rounded-lg p-4 md:col-span-2">
           <h2 className="text-lg font-semibold mb-4">Report Preview</h2>
           <div className="border rounded-lg p-4 min-h-[400px] flex items-center justify-center text-gray-500">

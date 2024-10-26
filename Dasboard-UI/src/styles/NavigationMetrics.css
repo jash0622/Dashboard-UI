@@ -1,13 +1,12 @@
 .navigation-section {
     padding: 20px;
-    background-color: #d1d1d1; /* Background color matching the uploaded image */
-    display: flex;
+    background-color: #d1d1d1; 
     justify-content: space-between;
   }
   
   .navigation-metrics {
     padding: 20px;
-    background-color: #d1d1d1; /* Background color matching the uploaded image */
+    background-color: #d1d1d1; 
   }
   
   h2 {
@@ -22,7 +21,7 @@
   }
   
   .main-score {
-    margin-right: 50px; /* Space between score and the grid */
+    margin-right: 50px; 
   }
   
   .score-circle {
@@ -50,21 +49,20 @@
   
   .metrics-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns layout */
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); 
   }
   
   .metric-item {
     display: flex;
     align-items: center;
-    background-color: #000; /* Black background for metric items */
+    background-color: #000; 
     border-radius: 8px;
     padding: 10px 15px;
     color: #fff;
   }
   
   .metric-icon {
-    font-size: 2rem; /* Icon size */
+    font-size: 2rem; 
     margin-right: 15px;
   }
   
@@ -89,17 +87,17 @@
   }
   
   .trend-indicator.up {
-    border-bottom: 8px solid #28a745; /* Green for upward trend */
+    border-bottom: 8px solid #28a745; 
   }
   
   .trend-indicator.down {
-    border-top: 8px solid #dc3545; /* Red for downward trend */
+    border-top: 8px solid #dc3545; 
   }
   
   .trend-indicator.neutral {
     width: 8px;
     height: 8px;
-    background-color: #ffc107; /* Yellow for neutral trend */
+    background-color: #ffc107; 
     border-radius: 50%;
   }
   
